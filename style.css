@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 14px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {  
+  max-width: 640px;
+  min-width: 640px;
+  margin: auto;
+}
+
+input {
+  border: 2px solid #2196f3;
+  display: block;
+  padding: 8px;
+  border-radius: 3px;  
+  width: 100%;
+  color: hsl(0, 0%, 36.7%);
+}
+
+h1 {
+  font-size: 3rem;
+  margin: 0 0 1rem 0;
+}
+
+.branch {  
+  margin-top: 1rem;
+}
+
+.branch-name {  
+  display: flex;
+}
+
+button {
+  border: none;
+  outline: none;
+  background: #2196f3;
+  color: #fff;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.branch-name button + button {
+  border-radius: 0 4px 4px 0;
+  background: #333;
+}
+
+.branch-name input {
+  border-radius: 4px 0 0 4px;
+  border-right: none;
+}

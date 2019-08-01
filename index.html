@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="./toastify.css">
+    <link rel="stylesheet" href="./style.css">
+
+    <title>git checkout -b</title>
+  </head>
+  <body>
+
+    <div class="container">
+      <h1>git checkout -b</h1>
+
+      <input type="text" placeholder="feature/bug..." class="input" data-bind="value: input, valueUpdate: 'keyup'">
+
+      <div class="branch">
+        <!-- <label>Feature</label> -->
+        <div class="branch-name">
+          <input type="text" class="branch-name" id="feature" data-bind="value: feature">
+          <!-- <input type="hidden" class="branch-name" id="featureCmd" data-bind="value: featureCmd"> -->
+          <button class="copy" type="button" data-clipboard-target="#feature" title="copy branch">B</button>
+          <button class="copy"
+            type="button"
+            data-bind="attr: { 'data-clipboard-text': featureCmd }"
+            title="copy git command">G</button>
+        </div>
+      </div>
+      <div class="branch">
+        <!-- <label>Hotfix</label> -->
+        <div class="branch-name">
+          <input type="text" class="branch-name" id="hotfix" data-bind="value: hotfix">
+          <!-- <input type="hidden" class="branch-name" id="hotfixCmd" data-bind="value: hotfixCmd"> -->
+          <button class="copy" type="button" data-clipboard-target="#hotfix" title="copy branch">B</button>
+          <button class="copy"
+            type="button"
+            data-bind="attr: { 'data-clipboard-text': hotfixCmd }"
+            title="copy git command">G</button>
+        </div>
+      </div>
+      <div class="branch">
+        <!-- <label>Release</label> -->
+        <div class="branch-name">
+          <input type="text" class="branch-name" id="release" data-bind="value: release">
+          <!-- <input type="hidden" class="branch-name" id="releaseCmd" data-bind="value: releaseCmd"> -->
+          <button class="copy" type="button" data-clipboard-target="#release" title="copy branch">B</button>
+          <button class="copy"
+            type="button"
+            data-bind="attr: { 'data-clipboard-text': releaseCmd }"
+            title="copy git command">G</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./clipboard.min.js"></script>
+    <script src="./lodash.kebabcase.js"></script>
+    <script src="./knockout-3.5.0.js"></script>
+    <script src="./toastify.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
