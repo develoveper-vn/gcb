@@ -52,6 +52,7 @@ button {
   padding-right: 1rem;
   font-weight: 900;
   cursor: pointer;
+  border-radius: 0;
 }
 
 .branch-name button + button {
